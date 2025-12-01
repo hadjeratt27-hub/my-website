@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Login - University M'Hamed Bougara University</title>
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1" />
+  <title>Login - M'Hamed Bougara University</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="login-body">
@@ -15,8 +16,12 @@
       <label for="fullname">Full Name</label>
       <input id="fullname" name="fullname" type="text" required>
 
+      <label for="matricule">Matricule</label>
+      <input id="matricule" name="matricule" type="text" required>
+
       <label for="group">Group</label>
-      <input id="group" name="group" type="text" required>
+      <input id="group" name="group" type="text">
+
 
       <label for="password">Password 🔑</label>
       <input id="password" name="password" type="password" required>
@@ -35,7 +40,7 @@ document.getElementById('loginForm').addEventListener('submit', function(e){
   const password = document.getElementById('password').value;
   const msg = document.getElementById('msg');
 
-  const correctPassword = "hadjer2025";
+  const correctPassword = "M2RTB2025";
 
   if(!full || !group){ 
     alert('Please enter name and group'); 
